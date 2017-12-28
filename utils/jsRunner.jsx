@@ -20,7 +20,7 @@ $.writeln = function(){
 try{
 	//$.write($.sblimeRunner.runFile);
 	var res=$.evalFile($.sblimeRunner.runFile);
-	if (res!==undefined){
+	if (res !== undefined && res !== null){
 		$.writeln('Indesign returned: '+res.toString());
 	}
 	$.writeln('[Finished]');
